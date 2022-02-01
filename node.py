@@ -19,6 +19,7 @@ class Node:
     self.row = row
     self.column = column
     # we now need an x co-ordinate and y co-ordinate
+    # this is because wont know how big each node is if we just used the row and column
     self.x = row * width
     self.y = column * width
     self.neighbors = [] #here we will add other nodes that will be above/down/left/right to our node

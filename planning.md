@@ -27,7 +27,13 @@ To create a Node, we will make a node class so our model will follow OOP
 NODE CLASS
 
 INITIALISERS:
-- white colour
+- white colour as default
+- row
+- column
+- width
+- total rows 
+- x coordinate
+- y coordinate
 
 
 
@@ -39,7 +45,7 @@ METHODS:
 - for all of the above make a method to set the colour but also one that returns the colour
 
 
-QUESTIONS TO ASK MYSELF:
+QUESTIONS TO ASK MYSELF/RESEARCH:
 - research whether feature tests can be implemented for Pygame
 
 
