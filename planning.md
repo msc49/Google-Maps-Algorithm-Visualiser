@@ -4,10 +4,7 @@
 before even trying to implement the algorithm, we need a grid:
 - This can be made using HTML/CSS or Pygame. To learn a new library and for a better user experience, i will use the latter
 
-The grid dimensions are irrelevant for now. The grid must be able to:
-- Create a starting node
-- Create an ending node
-- (we will also add walls where the algorithm is not allowed to touch. These will also be nodes but for now we ignore this)
+
 
 BREAKING DOWN PROBLEM (do each step first before moving onto other):
 - build grid
@@ -34,6 +31,7 @@ METHODS:
 - end node colour
 - wall node colour
 - reset all the nodes to white default colour
+- for all of the above make a method to set the colour but also one that returns the colour
 
 
 
