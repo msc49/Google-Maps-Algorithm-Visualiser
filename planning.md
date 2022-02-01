@@ -33,6 +33,7 @@ METHODS:
 - start node colour
 - end node colour
 - wall node colour
+- reset all the nodes to white default colour
 
 
 
