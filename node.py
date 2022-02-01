@@ -40,6 +40,18 @@ class Node:
   def make_path(self):
     self.colour = TURQUOISE
 
+  def is_wall(self):
+    return self.colour == BLACK
+
+  def is_start_node(self):
+    return self.colour == ORANGE
+
+  def is_end_node(self):
+    return self.colour == BLUE
+
+  def get_node_position(self):
+    return self.row, self.column
+
 
 
 
