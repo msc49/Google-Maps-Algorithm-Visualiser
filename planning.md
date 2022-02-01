@@ -8,12 +8,15 @@ before even trying to implement the algorithm, we need a grid:
 
 
 BREAKING DOWN PROBLEM (do each step first before moving onto other):
+- make node class
 - build grid
 - allow grid to make start node
 - allow grid to make end node 
 - ensure start node and end node are different colours
+- ensure start node != end node
 - allow 'walls'
-- allow nodes to 'find' each other, using Dijikstra's Algorithm
+- Develop Dijikstra's Algorithm
+- allow the nodes to find each other using the algorithm
 
 
 
