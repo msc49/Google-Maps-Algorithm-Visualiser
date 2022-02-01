@@ -17,6 +17,7 @@ BREAKING DOWN PROBLEM (do each step first before moving onto other):
 - allow 'walls'
 - Develop Dijikstra's Algorithm
 - allow the nodes to find each other using the algorithm
+- create error for no solution
 
 
 
