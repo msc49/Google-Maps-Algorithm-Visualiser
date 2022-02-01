@@ -24,6 +24,22 @@ class Node:
     self.neighbors = [] #here we will add other nodes that will be above/down/left/right to our node
     self.colour = WHITE
 
+  
+  def reset(self):
+    self.colour = WHITE
+
+  def make_wall(self):
+    self.colour = BLACK
+  
+  def make_start_node(self):
+    self.colour = ORANGE
+
+  def make_end_node(self):
+    self.colour = BLUE
+
+  def make_path(self):
+    self.colour = TURQUOISE
+
 
 
 
