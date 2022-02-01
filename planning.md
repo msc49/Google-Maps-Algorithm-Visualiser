@@ -32,7 +32,7 @@ INITIALISERS:
 METHODS:
 - start node colour
 - end node colour
-
+- wall node colour
 
 
 
