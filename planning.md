@@ -3,6 +3,7 @@
 
 before even trying to implement the algorithm, we need a grid:
 - This can be made using HTML/CSS or Pygame. To learn a new library and for a better user experience, i will use the latter
+- since the algorithm is dependant on the grid, we leave that task to later
 
 
 
@@ -32,6 +33,10 @@ METHODS:
 - wall node colour
 - reset all the nodes to white default colour
 - for all of the above make a method to set the colour but also one that returns the colour
+
+
+QUESTIONS TO ASK MYSELF:
+- research whether feature tests can be implemented for Pygame
 
 
 
