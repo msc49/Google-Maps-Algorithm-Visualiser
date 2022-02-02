@@ -1,4 +1,5 @@
 from queue import PriorityQueue
+from unittest import makeSuite
 import pygame
 import math
 from node import Node, ORANGE, BLUE, TURQUOISE, BLACK, WHITE
@@ -27,6 +28,11 @@ def make_the_grid(rows,width):
   return grid  #we return our grid that now has a node instance
 
 def draw_the_grid(rows, width):
+  '''
+  This essentially creates a grid where i represents rows and j will be columns
+  note i = j because we number of rows = columns
+  we then use the pygame draw.line function to make each individual square of the grid
+  '''
   #this is different to make the grid because this physically draws the lines. The function make_the_grid is 'invisiable' and is purely there for us to make node instances
   node_size = width // rows
   for i in range(rows):
