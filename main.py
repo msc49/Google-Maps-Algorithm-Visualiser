@@ -31,3 +31,7 @@ def draw_the_grid(rows, width):
   node_size = width // rows
   for i in range(rows):
     pygame.draw.line(WINDOW, DARK_GREY, (0, i * node_size), (width, i * node_size) )
+    for j in range(rows):
+      pygame.draw.line(WINDOW, DARK_GREY, (j * node_size, 0), (j * node_size, width) )
+
+
