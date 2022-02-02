@@ -1,1 +1,1 @@
-# Google-Maps-Algorithm-Visualiser
+# Google Maps Algorithm Visualiser
