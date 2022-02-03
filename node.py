@@ -10,6 +10,10 @@ BLACK = (0, 0, 0) # wall node
 TURQUOISE = (64, 224, 208) # path finder
 WHITE = (255, 255, 255) # default nodes
 
+
+LIGHT_GREEN = (36, 255, 72) # if the node is open
+RED = (255,0,0) # node closed
+
 class Node:
 
 
@@ -38,6 +42,12 @@ class Node:
   def make_end_node(self):
     self.colour = BLUE
 
+  def make_open_node(self):
+    self.colour = LIGHT_GREEN
+
+  def make_closed_node(self):
+    self.colour = RED
+
   def make_path(self):
     self.colour = TURQUOISE
 
@@ -49,6 +59,12 @@ class Node:
 
   def is_end_node(self):
     return self.colour == BLUE
+
+  def is_open_node(self):
+    return self.colour == LIGHT_GREEN
+
+  def is_closed_node(self):
+    return self.colour == RED
 
   def get_node_position(self):
     return self.row, self.column
