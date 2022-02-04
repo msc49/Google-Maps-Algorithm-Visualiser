@@ -69,6 +69,10 @@ class Node:
   def get_node_position(self):
     return self.row, self.column
 
+  def draw_node(self, window):
+    pygame.draw.rect(window, self.colour, (self.x, self.y, self.width, self.width))
+
+
 
 
 
