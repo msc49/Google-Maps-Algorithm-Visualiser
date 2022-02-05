@@ -41,3 +41,7 @@ def draw_the_grid(rows, width):
       pygame.draw.line(WINDOW, DARK_GREY, (j * node_size, 0), (j * node_size, width) )
 
 
+def minimum_distamce(x1,y1,x2,y2):
+  return abs(x1-y2) + abs(y1-y2)
+
+
