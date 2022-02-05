@@ -72,6 +72,21 @@ class Node:
   def draw_node(self, window):
     pygame.draw.rect(window, self.colour, (self.x, self.y, self.width, self.width))
 
+  def updating_neighbouts(self,grid):
+    self.neighbors  = []
+
+    if self.row < self.total_rows - 1 and not grid[self.row + 1][self.column].is_wall(): #checks neighbor below
+      self.neighbors.append(grid[self.row + 1][self.column])
+
+    if self.row > 0 and not grid[self.row - 1][self.column].is_wall():  #checks neighbor above
+      self.neighbors.append(grid[self.row + 1][self.column])
+
+    if self.column < self.total_rows - 1 and not grid[self.row][self.column + 1].is_wall(): # neighbor to right
+      self.neighbors.append(grid[self.row][self.column + 1])
+
+    if self.column > 0 and not grid[self.row][self.column - 1].is_wall(): # left neighbor 
+      self.neighbors.append(grid[self.row][self.column - 1])
+
 
 
 
