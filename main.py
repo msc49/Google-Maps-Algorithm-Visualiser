@@ -1,4 +1,5 @@
 from queue import PriorityQueue
+from turtle import onclick
 from unittest import makeSuite
 import pygame
 import math
@@ -51,10 +52,19 @@ def draw(window, grid, rows, width):
   pygame.display.update()
 
 
-
-
-
 def minimum_distance(x1,y1,x2,y2):
   return abs(x1-y2) + abs(y1-y2)
+
+def clicked_position(position, rows, width):
+  '''
+  we will use this function to calculate where in the grid, the user clicked his mouse on
+  '''
+  node_size = width // rows
+  y, x = position
+
+  row = y // position
+  column = x // position
+
+  return row, column
 
 
