@@ -27,7 +27,7 @@ def make_the_grid(rows,width):
 
   return grid  #we return our grid that now has a node instance
 
-def draw_the_grid(rows, width):
+def draw_the_grid(window, rows, width):
   '''
   This essentially creates a grid where i represents rows and j will be columns
   note i = j because we number of rows = columns
@@ -39,6 +39,19 @@ def draw_the_grid(rows, width):
     pygame.draw.line(WINDOW, DARK_GREY, (0, i * node_size), (width, i * node_size) )
     for j in range(rows):
       pygame.draw.line(WINDOW, DARK_GREY, (j * node_size, 0), (j * node_size, width) )
+
+
+def draw(window, grid, rows, width):
+  window.fill(WHITE)
+  for row in grid:
+    for node in row:
+      node.draw_node(window)
+
+  draw_the_grid(window, rows, width)
+  pygame.display.update()
+
+
+
 
 
 def minimum_distamce(x1,y1,x2,y2):
