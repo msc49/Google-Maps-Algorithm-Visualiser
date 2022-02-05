@@ -1,6 +1,4 @@
 from queue import PriorityQueue
-from turtle import onclick
-from unittest import makeSuite
 import pygame
 import math
 from node import Node, ORANGE, BLUE, TURQUOISE, BLACK, WHITE
