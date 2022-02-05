@@ -54,7 +54,7 @@ def draw(window, grid, rows, width):
 
 
 
-def minimum_distamce(x1,y1,x2,y2):
+def minimum_distance(x1,y1,x2,y2):
   return abs(x1-y2) + abs(y1-y2)
 
 
