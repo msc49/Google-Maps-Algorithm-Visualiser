@@ -133,7 +133,7 @@ def main(window, width):
           end.make_end_node()
 
         elif node != end and node != start:
-          node.make_barrier()
+          node.make_wall()
 
       elif pygame.mouse.get_pressed()[2]: # RIGHT CLICK
         position = pygame.mouse.get_pos()
