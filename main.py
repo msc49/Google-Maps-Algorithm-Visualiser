@@ -116,5 +116,26 @@ def main(window, width):
           start = None
         elif node == end:
           end = None
+      
+
+      if event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_SPACE and start and end:
+          for row in grid:
+            for node in row:
+              node.updating_neighbors(grid)
+
+          dijkstras(lambda: draw(window, grid, ROWS, width), grid, start, end)
+
+        if event.key == pygame.K_c:
+          start = None
+          end = None
+          grid = make_the_grid(ROWS, width)
+
+  pygame.quit()
+
+
+
+
+main(WINDOW, WIDTH)
 
 
