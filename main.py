@@ -86,6 +86,10 @@ def main(window, width):
   run = True
 
   while run:
+    draw(window, grid, ROWS, width)
+    for event in pygame.event.get():
+      if event.type == pygame.QUIT:
+        run = False
 
 
 
