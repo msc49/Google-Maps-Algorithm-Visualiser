@@ -25,14 +25,14 @@ to get started please make sure have Python 3.9.10 installed on your local machi
 - ensure you have pygame installed. If you do not, run the following command in your terminal:
 
 ```
-python3 -m pip install -U pygame --user
+> python3 -m pip install -U pygame --user
 
 ```
 
 - now run the following command in your terminal to visualise the algorithm:
 
 ```
-python3 main.py
+> python3 main.py
 
 ```
 
@@ -44,6 +44,13 @@ python3 main.py
 
 Now when you want the algorithm to run, press the SPACE BAR
 
+
+## Screenshots
+
+I have added images below to show how the algorithm works
+
+
+![screenshots](https://github.com/msc49/Google-Maps-Algorithm-Visualiser/screenshots/1.png)
 
 
 
