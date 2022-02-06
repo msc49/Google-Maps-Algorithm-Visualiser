@@ -1,7 +1,10 @@
+from pickle import NONE
 from queue import PriorityQueue
 import pygame
 import math
 from node import Node, ORANGE, BLUE, TURQUOISE, BLACK, WHITE
+from algorithm import dijkstras
+from tkinter import messagebox
 
 
 DARK_GREY = (159,159,159)
@@ -71,6 +74,19 @@ def reconstruct_path(came_from, current, draw):
     current = came_from[current]
     current.make_path()
     draw()
+
+
+def main(window, width):
+  ROWS = 50
+  grid = make_the_grid(ROWS,width)
+
+  start = None
+  end = None
+
+  run = True
+
+  while run:
+
 
 
 

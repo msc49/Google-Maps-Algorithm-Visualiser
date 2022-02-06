@@ -3,6 +3,7 @@ import pygame
 import math
 
 
+
 # lets add some constants which will represent the colours for our nodes using RGB colours
 ORANGE = (255, 165 ,0) # starting node
 BLUE = (0, 255, 0) # ending node
