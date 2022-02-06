@@ -3,8 +3,7 @@ from queue import PriorityQueue
 import pygame
 import math
 from node import Node, ORANGE, BLUE, TURQUOISE, BLACK, WHITE
-from algorithm import dijkstras
-from tkinter import messagebox
+from algorithm import dijkstras_algo
 
 
 DARK_GREY = (159,159,159)
@@ -63,8 +62,8 @@ def clicked_position(position, rows, width):
   node_size = width // rows
   y, x = position
 
-  row = y // position
-  column = x // position
+  row = y // node_size
+  column = x // node_size
 
   return row, column
 

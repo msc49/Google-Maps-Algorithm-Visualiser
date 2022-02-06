@@ -1,8 +1,7 @@
 from collections import deque
 
-from main import reconstruct_path
 
-def dijkstras(draw, grid, start, end):
+def dijkstras_algo(draw, grid, start, end):
   came_from = {}
   visited = []
   queue = deque()   #deque is a container datatype that allows you to append and pop from both sides of the list.
