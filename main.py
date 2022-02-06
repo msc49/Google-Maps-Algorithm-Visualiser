@@ -91,6 +91,22 @@ def main(window, width):
       if event.type == pygame.QUIT:
         run = False
 
+      
+      if pygame.mouse.get_pressed()[0]: #LEFT CLICK
+        position = pygame.mouse.get_pos()
+        row, column = clicked_position(position, ROWS, width)
+        node = grid[row][column]
+        if not start and node != end:
+          start = node
+          start.make_start_node()
+
+        elif not end and node != start:
+          end = node
+          end.make_end_node()
+
+        elif node != end and node != start:
+          node.make_barrier()
+
 
 
 
