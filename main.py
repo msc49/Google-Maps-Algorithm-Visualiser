@@ -3,7 +3,7 @@ from queue import PriorityQueue
 import pygame
 import math
 from node import Node, ORANGE, BLUE, TURQUOISE, BLACK, WHITE
-from algorithm import dijkstras_algo
+from collections import deque
 
 
 DARK_GREY = (159,159,159)
@@ -74,6 +74,35 @@ def reconstruct_path(came_from, current, draw):
     current.make_path()
     draw()
 
+def dijkstras_algo(draw, grid, start, end):
+  came_from = {}
+  visited = []
+  queue = deque()   #deque is a container datatype that allows you to append and pop from both sides of the list.
+  # we are using this over a standard list because of its swiftness 
+
+  queue.append(start)
+  visited.append(start)
+
+  while len(queue) > 0:
+    current = queue.popleft()
+    if current == end:
+      reconstruct_path(came_from,end,draw)
+      end.make_end_node()
+      return True
+
+    for neighbor in current.neighbors:
+      if neighbor not in visited:
+          visited.append(neighbor)
+          came_from[neighbor] = current
+          queue.append(neighbor)
+          neighbor.make_open_node()
+    draw()
+    if current != start:
+     current.make_closed_node()
+
+  return False
+
+
 
 def main(window, width):
   ROWS = 50
@@ -123,7 +152,7 @@ def main(window, width):
             for node in row:
               node.updating_neighbors(grid)
 
-          dijkstras(lambda: draw(window, grid, ROWS, width), grid, start, end)
+          dijkstras_algo(lambda: draw(window, grid, ROWS, width), grid, start, end)
 
         if event.key == pygame.K_c:
           start = None

@@ -1,6 +1,7 @@
 from collections import deque
 
 
+
 def dijkstras_algo(draw, grid, start, end):
   came_from = {}
   visited = []
@@ -22,10 +23,14 @@ def dijkstras_algo(draw, grid, start, end):
           visited.append(neighbor)
           came_from[neighbor] = current
           queue.append(neighbor)
-          neighbor.makeOpen()
+          neighbor.make_open_node()
     draw()
     if current != start:
-     current.makeClosed()
+     current.make_closed_node()
 
   return False
+
+
+
+
 

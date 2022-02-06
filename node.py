@@ -80,7 +80,7 @@ class Node:
       self.neighbors.append(grid[self.row + 1][self.column])
 
     if self.row > 0 and not grid[self.row - 1][self.column].is_wall():  #checks neighbor above
-      self.neighbors.append(grid[self.row + 1][self.column])
+      self.neighbors.append(grid[self.row - 1][self.column])
 
     if self.column < self.total_rows - 1 and not grid[self.row][self.column + 1].is_wall(): # neighbor to right
       self.neighbors.append(grid[self.row][self.column + 1])
