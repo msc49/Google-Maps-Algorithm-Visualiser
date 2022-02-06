@@ -50,7 +50,7 @@ Now when you want the algorithm to run, press the SPACE BAR
 I have added images below to show how the algorithm works
 
 
-(https://github.com/msc49/Google-Maps-Algorithm-Visualiser/screenshots/1.png)
+![screenshots](screenshots/1.png)
 
 
 
