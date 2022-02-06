@@ -54,3 +54,15 @@ I have added images below to show how the algorithm works
 
 
 
+![screenshots](screenshots/2.png)
+
+
+
+![screenshots](screenshots/3.png)
+
+
+
+![screenshots](screenshots/4.png)
+
+
+
