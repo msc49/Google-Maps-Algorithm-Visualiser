@@ -107,6 +107,14 @@ def main(window, width):
         elif node != end and node != start:
           node.make_barrier()
 
-
+      elif pygame.mouse.get_pressed()[2]: # RIGHT CLICK
+        position = pygame.mouse.get_pos()
+        row, col = clicked_position(position, ROWS, width)
+        node = grid[row][col]
+        node.reset()
+        if node == start:
+          start = None
+        elif node == end:
+          end = None
 
 
